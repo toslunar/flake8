@@ -13,6 +13,7 @@ from flake8 import exceptions
             plugin_name="plugin_name",
             exception=ValueError("boom!"),
         ),
+        exceptions.InvalidSyntax(exception=ValueError("Unexpected token: $")),
         exceptions.PluginRequestedUnknownParameters(
             plugin={"plugin_name": "plugin_name"},
             exception=ValueError("boom!"),
